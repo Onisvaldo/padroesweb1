@@ -1,0 +1,42 @@
+.body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: #fbeec2;
+}
+
+nav {
+  background-color: #333;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Efeito hover nos itens */
+.menu li a:hover {
+  background-color: #3498db;
+  transform: scale(1.1);
+}
+
+.img {
+  
+}
+

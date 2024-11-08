@@ -1,42 +1,66 @@
-.body {
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  background-color: #fbeec2;
-}
-
-nav {
-  background-color: #333;
-  width: 100%;
-  padding: 10px 0;
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  margin: 10;
+  padding: 10;
+  background-color: #c0e2d4;
 }
 
 .menu {
-  list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-  padding: 10px 15px;
-  display: block;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  border-radius: 5px;
-}
-
-/* Efeito hover nos itens */
-.menu li a:hover {
-  background-color: #3498db;
-  transform: scale(1.1);
-}
-
-.img {
+  justify-content:first baseline ;
+  background: #73eaf3 ;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
   
 }
 
+.menu li {
+  padding: 0 20px;
+
+}
+
+.menu a {
+  color: #1e1b17;
+  text-decoration:underline;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+.imge {
+  display:block ;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%; /* Ajuste o valor conforme necessário */
+  height:auto ; /* Mantém a proporção da imagem */
+  border: 2px solid hsl(0, 4%, 67%); /* Adiciona uma borda à imagem */
+  border-radius: 10px; /* Adiciona cantos arredondados */
+}
+.noticias {
+  flex: 1 1 calc(33.333% - 20px); 
+  background: #fff; 
+  padding: 20px; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px
+}
+
+.marquee {
+  color: rgb(229, 18, 15);
+  font-size: 40px;
+  overflow: hidden;
+  position: relative;
+  white-space:inherit ;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

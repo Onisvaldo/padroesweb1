@@ -1,0 +1,95 @@
+.container img {
+  max-width: 80%;
+  display: block;
+  padding: none; /* "none" não é um valor válido para padding */
+  align-items: center; /* Não é aplicável diretamente em imagens */
+  border-radius: 5px;
+  margin: auto; /* Centraliza horizontalmente */
+  justify-content: center; /* Não é aplicável diretamente em imagens */
+}
+.div3 {
+    background-color: rgb(218, 194, 194);
+    clear: both; /* Garante que o elemento não se sobreponha a elementos flutuantes */
+}
+.denuncia {
+    background: rgb(239, 242, 245);
+    padding-top: 10px 20px; /* O valor para padding-top deve ser único */
+    text-align: center;
+    font-weight: 200; /* Valores comuns são: normal, bold ou números de 100 a 900 */
+    border: 1px; /* Para aplicar uma borda visível, o estilo precisa ser especificado */
+    border-radius: 5px;
+    text-decoration: double; /* Funciona em texto, mas pode não ser a melhor escolha */
+}
+
+#inputt {
+  /* Define o elemento como um container flexbox, permitindo um layout flexível */
+  display: flex;
+
+  /* Define o eixo principal do container flex como linha, alinhando os itens horizontalmente */
+  flex-direction: row;
+
+  /* Alinha os itens verticalmente ao centro do container */
+  align-items:baseline;
+
+  /* Adiciona uma borda sólida de 1px com a cor cinza claro */
+  border: 1px solid #ccc;
+
+  /* Arredonda os cantos do container com um raio de 5px */
+  border-radius: 5px;
+
+  /* Adiciona um padding de 10px ao redor do conteúdo do container */
+  padding: 30px;
+}
+
+.labell {
+  /* Adiciona uma margem direita de 10px ao rótulo */
+  margin-right: 10px;
+
+  /* Define o peso da fonte como negrito, tornando o texto do rótulo mais destacado */
+  font-weight: bold;
+}
+
+#search {
+  /* Torna o campo de entrada flexível, ocupando o espaço disponível */
+  flex: 1;
+
+  /* Remove a borda padrão do campo de entrada */
+  border: none;
+
+  /* Remove o contorno que aparece quando o campo de entrada está focado */
+  outline: none;
+
+  /* Adiciona um padding interno de 5px ao campo de entrada */
+  padding: 5px;
+
+  /* Define o tamanho da fonte do texto do campo de entrada como 16px */
+  font-size: 16px;
+}
+
+button[data-testid="btn-search"] {
+  /* Define a cor de fundo do botão como um azul claro */
+  background-color: #6eb0f5;
+
+  /* Define a cor do texto do botão como branco */
+  color: #fff;
+
+  /* Remove a borda padrão do botão */
+  border: none;
+
+  /* Arredonda os cantos do botão com um raio de 5px */
+  border-radius: 75px;
+
+  /* Adiciona um padding de 10px para cima e para baixo, e 20px para esquerda e direita */
+  padding: 10px 20px;
+
+  /* Define o cursor do mouse como um ponteiro quando o usuário passa o mouse sobre o botão */
+  cursor: pointer;
+
+  /* Adiciona um efeito de transição suave à cor de fundo do botão quando o usuário passa o mouse sobre ele */
+  transition: background-color 0.3s ease;
+}
+
+button[data-testid="btn-search"]:hover {
+  /* Altera a cor de fundo do botão para um azul mais escuro quando o usuário passa o mouse sobre ele */
+  background-color: #b8d0ea;
+}
